@@ -1,0 +1,442 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+
+/*font-size:vw;*/
+body{
+	width: 100%;
+}
+
+/* FONT */
+h1,h2,h3,h4{
+	font-family: 'Playfair Display', serif;
+}
+p{
+	font-family: 'lato', sans-serif;
+}
+/* HEADER */
+
+header{
+/*display:block;*//*vertical-align:top;*/
+width: 100%;
+background-image: url('./landingImage/backbmw.png');
+background-size: cover;
+height: 60vh;
+}
+		.logo{
+			width:7%;
+			display: flex;
+			margin: auto;
+		}
+		header h1{
+			margin-top: 15%;
+			font-size: 5.5vw;
+			color: #FFF;
+			line-height: 1em;
+		}
+		header h2{
+			font-size: 4vw;
+			font-weight: normal;
+			color: #FFF;
+		}
+
+/* BUTTON */
+
+#inheader a{
+	width: 155px;
+	padding: 1%;
+	display: flex;
+	background-color: #FFF;
+	margin: 10% auto 0 auto;
+	cursor: pointer;
+	text-decoration: none;
+	color : #000;
+	border-radius: 4px;
+}
+	#inheader a:hover{
+	opacity: 0.5;
+	}
+
+	a span{
+		padding: 1px;
+		margin-top: 2px;
+		margin: auto;
+	}
+
+	 a img{
+		width: 15%;
+	}
+
+
+/* SECTION */
+
+/* SECTION 1 */
+
+#section1{
+	width: 100%;
+	margin: auto;
+}
+
+
+/* ARTICLE */
+
+article{
+	margin: 1% auto;
+	display: flex;
+	flex-direction: column;
+	border-radius: 4px;
+	padding: 10px;
+}
+	/* IMG ART 1 - ART 2 - ART 3 */
+	#front,#back{
+	width: 100%;
+	}
+
+	#art1, #art2, #art3para{
+		display: none;
+	}
+
+	.hiddenart{
+		display: none;
+	}
+
+button {
+	width: 155px;
+	padding: 2.5%;
+	margin: 2% auto;
+	cursor: pointer;
+	text-decoration: none;
+	color : #000;
+	border-color: blue;
+	border-radius: 4px;
+	background: white;
+}
+/* ARTICLE 2 */
+
+	#art2{ 
+	border-radius: 4px;
+	margin: auto;
+	border-collapse: collapse;
+}
+	td{
+		border-bottom: 2px solid #000;
+	}
+
+	.border{
+		border: none;
+	}
+
+	.align,.pad{
+		padding: 7% 0;
+	}
+	.align{
+		text-align: right;
+	}
+
+
+
+/* ARTICLE 3 */
+
+#art3{
+	display: flex;
+	flex-direction: row;
+}
+.imgbloc{
+	width: 100%;
+}
+	.imgbloc img{
+		width: 100%;
+		height: 50%;
+		vertical-align: top;
+		opacity: 0.5;
+	}
+	.imgbloc img:hover{
+		opacity: 1;
+	}
+
+/* SECTION 2 */
+
+#section2{
+	background-image: url('./landingImage/fontbmw.png');
+	background-size: cover;
+	height: 100vh;
+}
+
+#title2{
+	padding-top: 3%;
+}
+
+div#title2 h1{
+	font-size: 35pt;
+	margin-left: 5%;
+
+
+}
+div#title2 h2{
+	font-size: 20pt;
+	font-weight: normal;
+	margin-left: 5%;
+
+}
+/* FORM */
+
+form{
+	display: flex;
+	flex-direction: column;
+	padding: 5% 0;
+}
+
+input[type=text], input[type=email], input[type=tel] {
+	width: 320px;
+	margin: 1% auto;
+	padding: 12px 15px;
+}
+
+input[type=submit]{
+	width: 150px;
+	background-color: #000;
+	margin: 1% auto;
+	padding: 12px 15px;
+	color: white;
+	border:none;
+}
+	input[type=submit]:hover{
+		background-color: #FFF;
+		color:#000;
+		cursor: pointer;
+	}
+#check{
+	display: flex;
+	margin: auto;
+}
+.check{
+	width: 3%;
+}
+.cond{
+	text-decoration: none;
+}
+/* FOOTER */
+
+footer{
+	background-color: #000; 
+	color: #FFF;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+#bloc{
+	margin: auto;
+}
+
+
+#bloc li{
+	list-style-type: none;
+}
+#bloc li a{
+	text-decoration: none;
+	color: #FFF;
+}
+.icone a img{
+	width: 100%;
+}
+.pub{
+	margin: auto;
+}
+.icone{
+	display: flex;
+	flex-direction: column;
+}
+
+/* Minimum est la rÃŠsolution de l'IPAD */
+
+@media screen and (min-width: 769px){
+ /* ARTICLE */
+ #art1, #art2, #art3para{
+	display: block;
+}
+button{
+	display: none;
+}
+ .hiddenart{
+ 	display: block;
+ }
+ .arthidden{
+ 	display:none;
+ }
+/* COPY OF NABIL'S CODE */
+
+footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+ div#bloc{
+	display: flex;
+ 	flex-direction: row;
+ 	justify-content: space-between;
+
+}
+
+div.bloc1 {
+	padding: 60px 40px;
+}
+
+div.pub{
+	padding: 60px 2px;
+}
+/* FIN */
+.pub a img{
+	width: 30%;
+	}
+}
+
+/* Minimum est la rÃŠsolution Ã  l'IPAD (techniquement un laptop ou autre connerie du genre */
+
+@media screen and (min-width: 1025px){
+
+/* HEADER */
+
+header{
+	background-position: 50%;
+	height: 100vh;
+}
+
+header h1{
+	width: 70%;
+	margin-top: 13%;
+	margin-left: 5%;
+	
+	
+		}
+header h2{
+	margin-left: 5%;
+		}
+
+
+/* ARTICLE */
+.arthidden{
+	display: none;
+}
+.hiddenart{
+	display: block;
+}
+
+#art-a{
+	display: flex;
+	flex-direction: row-reverse;
+}
+#art-b{
+	display: flex;
+	flex-direction: row;
+}
+#art-c{
+	display: flex;
+	flex-direction: row-reverse;
+}
+#front,#back{
+	width: 50%;
+}
+
+/* SECTION 1 */
+
+#section1{
+	width:100%;
+}
+
+/* ARTICLE */
+
+article{
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+#art3para,#art3{
+	width: 100%;
+}
+
+#section2{
+	background-position: 50%;
+}
+form{
+	margin-left: 50%;
+}
+
+/* FOOTER */
+#bloc{
+	margin:0;
+}
+
+footer{
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+}
+
+ div#bloc{
+ 	width: 50%;
+ 	box-sizing: border-box;
+ 	
+}
+
+div.bloc1 {
+	width: 100%;
+}
+h4.unicond{
+	padding-bottom: 20px;
+}
+li{
+	padding-bottom: 5px;
+}
+div.pub{
+	margin-top: 0%;
+}
+
+h4#rej{
+	padding-bottom: 5px;
+}
+
+/* Faire un essai */
+#inheader a{
+	margin-left: 80%;
+	margin-top: 6.2%;
+	border-radius: 0;
+	position: fixed;
+}
+
+
+
+
+/* FONT */
+
+p{
+	width: 70%;
+	font-size: 12pt;
+	margin-top: 10px;
+}
+#art1,#art3para{
+	margin: auto;
+}
+#art1 .hiddenart, #paragraph, #art3para p, #art3para .hiddenart{
+	margin-left: 55px;
+}
+div#paragraph, #art3para p{
+	padding-top: 35px;
+}
+
+.hiddenart h2, .arthidden h2{
+	width: 55%;
+	font-weight: normal;
+	font-size: 20pt;
+}
+
+h3{
+	font-weight: normal;
+	font-size: 10pt;
+
+}
+
+}
